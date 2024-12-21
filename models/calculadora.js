@@ -1,5 +1,9 @@
-function somar(argumento1, argumento2) {
-  return argumento1 + argumento2;
+function somar(numero1, numero2) {
+  if (typeof numero1 != "number") {
+    return "Error";
+  }
+
+  return numero1 + numero2;
 }
 
 exports.somar = somar;
